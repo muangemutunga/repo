@@ -584,34 +584,3 @@ footer {
 }
 
 /* End of CSS */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    transition: padding 0.3s ease, background 0.3s ease;
-  }
-  
-  header.shrink {
-    padding: 0.5rem 10%;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-
-  #loader {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease;
-  }
-  
-  body.loaded #loader {
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  
